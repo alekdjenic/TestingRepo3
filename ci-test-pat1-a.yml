@@ -3,9 +3,6 @@ trigger:
     include:
       - main
       - driftcheck
-  paths:
-    include:
-      - src/*
 
 pool: default
 
