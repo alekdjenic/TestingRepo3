@@ -1,0 +1,15 @@
+trigger:
+  branches:
+    include:
+      - main
+      - driftcheck
+  paths:
+    include:
+      - src/*
+
+pool:
+  vmImage: default
+
+steps:
+  - script: echo "pat2 fired for $(Build.SourceBranch) $(Build.SourceVersion)"
+    displayName: 'pat2 marker'
