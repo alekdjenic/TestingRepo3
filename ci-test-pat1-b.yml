@@ -7,8 +7,7 @@ trigger:
     include:
       - src/*
 
-pool:
-  vmImage: default
+pool: default
 
 steps:
   - script: echo "pat1-b fired for $(Build.SourceBranch) $(Build.SourceVersion)"
